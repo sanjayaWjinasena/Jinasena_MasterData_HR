@@ -16,7 +16,7 @@
         'data/hr.job.csv',
         'data/hr.employee.csv',
         'data/hr.contract.csv',
-        'data/account.analytic.account.link.csv',
+        'data/link/account.analytic.account.csv',
     ],
     'installable': True,
     'auto_install': False,
