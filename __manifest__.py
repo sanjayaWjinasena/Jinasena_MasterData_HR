@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+{
+    'name': 'Jinasena : MasterData : HR',
+    'version': '17.0.0.0.1',
+    'summary': 'Master-data extracted from CDB for HR domain.',
+    'description': 'Extracted from Clear-DB. Test-env master data. Edit the CSVs in data/ to add/remove rows before install.',
+    'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
+    'category': 'Extra Tools',
+    'license': 'LGPL-3',
+    'depends': [
+        'BugFix-HR',
+        'Jinasena_MasterData_Common',
+    ],
+    'data': [
+        'data/hr_department.csv',
+        'data/hr_job.csv',
+        'data/hr_employee.csv',
+        'data/hr_contract.csv',
+        'data/x_paye_tax_tag.csv',
+    ],
+    'installable': True,
+    'auto_install': False,
+    'application': False,
+}
