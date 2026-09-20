@@ -1,42 +1,42 @@
-id,active,name,sequence,expected_employees,no_of_employee,no_of_recruitment,no_of_hired_employee,description,department_id/id,company_id/id,color,website_description,job_details,x_studio_test_document_filename,x_studio_link
-hr_job_head_of_human_resourse,1,Head Of Human Resourse,1,2,1,1,0,"<p data-last-history-steps=""1270130943667562"">/</p>",,,0,,"<span class=""text-muted small"">Time to Answer</span>
+id,active,name,sequence,expected_employees,no_of_employee,no_of_recruitment,no_of_hired_employee,description,department_id/id,company_id/id,address_id/id,user_id/id,color,favorite_user_ids/id,website_description,job_details,x_studio_line_manager_name/id,x_studio_leadership_name/id,x_studio_test_document_filename,x_studio_link
+hr_job_head_of_human_resourse,1,Head Of Human Resourse,1,2,1,1,0,"<p data-last-history-steps=""1270130943667562"">/</p>",,base.main_company,base.main_partner,,0,,,"<span class=""text-muted small"">Time to Answer</span>
             <h6>2 open days</h6>
             <span class=""text-muted small"">Process</span>
             <h6>1 Phone Call</h6>
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
-hr_job_communication_executive,1,Communication Executive ,2,2,1,1,0,,,,0,,"<span class=""text-muted small"">Time to Answer</span>
+        ",,,,
+hr_job_communication_executive,1,Communication Executive ,2,2,1,1,0,,,base.main_company,base.main_partner,,0,,,"<span class=""text-muted small"">Time to Answer</span>
             <h6>2 open days</h6>
             <span class=""text-muted small"">Process</span>
             <h6>1 Phone Call</h6>
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
-hr_job_it_executive,1,IT Executive,3,1,0,1,0,,,,0,,"<span class=""text-muted small"">Time to Answer</span>
+        ",,,,
+hr_job_it_executive,1,IT Executive,3,1,0,1,0,,,base.main_company,base.main_partner,,0,,,"<span class=""text-muted small"">Time to Answer</span>
             <h6>2 open days</h6>
             <span class=""text-muted small"">Process</span>
             <h6>1 Phone Call</h6>
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
-hr_job_erp_consultant,1,ERP Consultant,10,1,0,1,0,,,,0,,"<span class=""text-muted small"">Time to Answer</span>
+        ",,,,
+hr_job_erp_consultant,1,ERP Consultant,10,1,0,1,0,,,base.main_company,base.main_partner,,0,__export__.res_users_164_79257039,,"<span class=""text-muted small"">Time to Answer</span>
             <h6>2 open days</h6>
             <span class=""text-muted small"">Process</span>
             <h6>1 Phone Call</h6>
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_engineering_assistant,1,Engineering Assistant,10,3,2,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,0,"
+    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,__export__.res_partner_87_894ae6ca,,0,__export__.res_users_164_79257039,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -266,21 +266,21 @@ hr_job_engineering_assistant,1,Engineering Assistant,10,3,2,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
-hr_job_functional_consultant,1,Functional Consultant,10,2,1,1,1,,,,0,,"<span class=""text-muted small"">Time to Answer</span>
+        ",,,,
+hr_job_functional_consultant,1,Functional Consultant,10,2,1,1,1,,,base.main_company,base.main_partner,,0,,,"<span class=""text-muted small"">Time to Answer</span>
             <h6>2 open days</h6>
             <span class=""text-muted small"">Process</span>
             <h6>1 Phone Call</h6>
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_functional_consultant_10,1,Functional Consultant,10,3,2,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,0,"
+    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,__export__.res_partner_87_894ae6ca,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -508,21 +508,21 @@ hr_job_functional_consultant_10,1,Functional Consultant,10,3,2,1,0,"
             <span class=""text-muted small"">Process</span>
             </p><h6>1 Phone Call</h6><h6>1 Onsite Interview</h6><p style=""margin-bottom: 0px;"">
             <span class=""text-muted small"">Days to get an Offer</span>
-            </p><h6>4 Days after Interview</h6>",,
-hr_job_functional_consultant_5,1,Functional Consultant,10,4,3,1,1,,,,0,,"<span class=""text-muted small"">Time to Answer</span>
+            </p><h6>4 Days after Interview</h6>",,,,
+hr_job_functional_consultant_5,1,Functional Consultant,10,4,3,1,1,,,base.main_company,base.main_partner,,0,,,"<span class=""text-muted small"">Time to Answer</span>
             <h6>2 open days</h6>
             <span class=""text-muted small"">Process</span>
             <h6>1 Phone Call</h6>
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_prod_erp_supp_executive,1,Prod. ERP Supp. Executive,10,3,2,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,0,"
+    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,__export__.res_partner_87_894ae6ca,,0,__export__.res_users_164_79257039,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -752,21 +752,21 @@ hr_job_prod_erp_supp_executive,1,Prod. ERP Supp. Executive,10,3,2,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
-hr_job_sales_manager,1,Sales Manager,10,1,0,1,0,,,,0,,"<span class=""text-muted small"">Time to Answer</span>
+        ",,,,
+hr_job_sales_manager,1,Sales Manager,10,1,0,1,0,,,base.main_company,base.main_partner,,0,base.user_admin,,"<span class=""text-muted small"">Time to Answer</span>
             <h6>2 open days</h6>
             <span class=""text-muted small"">Process</span>
             <h6>1 Phone Call</h6>
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_senior_engineer,1,Senior Engineer,10,2,1,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,0,"
+    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,__export__.res_partner_87_894ae6ca,,0,__export__.res_users_164_79257039,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -994,13 +994,13 @@ hr_job_senior_engineer,1,Senior Engineer,10,2,1,1,0,"
             <span class=""text-muted small"">Process</span>
             </p><h6>1 Phone Call</h6><h6>1 Onsite Interview</h6><p style=""margin-bottom: 0px;"">
             <span class=""text-muted small"">Days to get an Offer</span>
-            </p><h6>4 Days after Interview</h6>",,
+            </p><h6>4 Days after Interview</h6>",,,,
 hr_job_senior_store_keeper,1,Senior Store Keeper,10,2,1,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,0,"
+    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,__export__.res_partner_87_894ae6ca,,0,__export__.res_users_164_79257039,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -1230,13 +1230,13 @@ hr_job_senior_store_keeper,1,Senior Store Keeper,10,2,1,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_software_engineer,1,Software Engineer,10,215,214,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -1466,12 +1466,12 @@ hr_job_software_engineer,1,Software Engineer,10,215,214,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_store_assistant,1,Store Assistant,10,2,1,1,0,"<p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,0,"<section class=""pt32"">
+    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,__export__.res_partner_87_894ae6ca,,0,,"<section class=""pt32"">
         <div class=""container"">
             <div class=""row"">
                 <div class=""col-lg-8 pb32"" itemprop=""description"">
@@ -1697,21 +1697,21 @@ hr_job_store_assistant,1,Store Assistant,10,2,1,1,0,"<p>
             <span class=""text-muted small"">Process</span>
             </p><h6>1 Phone Call</h6><h6>1 Onsite Interview</h6><p style=""margin-bottom: 0px;"">
             <span class=""text-muted small"">Days to get an Offer</span>
-            </p><h6>4 Days after Interview</h6>",,
-hr_job_test_01,1,TEST-01,10,1,0,1,0,,,,0,,"<span class=""text-muted small"">Time to Answer</span>
+            </p><h6>4 Days after Interview</h6>",,,,
+hr_job_test_01,1,TEST-01,10,1,0,1,0,,,base.main_company,base.main_partner,,0,__export__.res_users_8_dbf00b39,,"<span class=""text-muted small"">Time to Answer</span>
             <h6>2 open days</h6>
             <span class=""text-muted small"">Process</span>
             <h6>1 Phone Call</h6>
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_tech_sales_officer,1,Tech. Sales Officer,10,2,1,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,0,"
+    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,__export__.res_partner_87_894ae6ca,,0,__export__.res_users_164_79257039,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -1941,13 +1941,13 @@ hr_job_tech_sales_officer,1,Tech. Sales Officer,10,2,1,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_finance_manager,1,Test - Finance Manager,10,2,1,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_finance_accounting,,0,"
+    </p>",Jinasena_MasterData_HR.hr_department_test_finance_accounting,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -2177,13 +2177,13 @@ hr_job_test_finance_manager,1,Test - Finance Manager,10,2,1,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_hr_manager,1,Test - HR Manager,10,2,1,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_human_resources,,0,"
+    </p>",Jinasena_MasterData_HR.hr_department_test_human_resources,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -2413,13 +2413,13 @@ hr_job_test_hr_manager,1,Test - HR Manager,10,2,1,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_operations_manager,1,Test - Operations Manager,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_operations,,0,"
+    </p>",Jinasena_MasterData_HR.hr_department_test_operations,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -2649,13 +2649,13 @@ hr_job_test_operations_manager,1,Test - Operations Manager,10,1,0,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_payroll_specialist,1,Test - Payroll Specialist,10,2,1,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_human_resources,,0,"
+    </p>",Jinasena_MasterData_HR.hr_department_test_human_resources,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -2885,13 +2885,13 @@ hr_job_test_payroll_specialist,1,Test - Payroll Specialist,10,2,1,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_qa_engineer,1,Test - QA Engineer,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_engineering,,0,"
+    </p>",Jinasena_MasterData_HR.hr_department_test_engineering,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -3121,13 +3121,13 @@ hr_job_test_qa_engineer,1,Test - QA Engineer,10,1,0,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_software_engineer,1,Test - Software Engineer,10,2,1,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_engineering,,0,"
+    </p>",Jinasena_MasterData_HR.hr_department_test_engineering,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -3357,12 +3357,12 @@ hr_job_test_software_engineer,1,Test - Software Engineer,10,2,1,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_position,1,Test Position,10,1,0,1,0,"<p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_jam_executive,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,0,"<section class=""pt32"">
+    </p>",Jinasena_MasterData_HR.hr_department_jam_executive,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,__export__.res_partner_87_894ae6ca,,0,,"<section class=""pt32"">
         <div class=""container"">
             <div class=""row"">
                 <div class=""col-lg-8 pb32"" itemprop=""description"">
@@ -3588,13 +3588,13 @@ hr_job_test_position,1,Test Position,10,1,0,1,0,"<p>
             <span class=""text-muted small"">Process</span>
             </p><h6>1 Phone Call</h6><h6>1 Onsite Interview</h6><p style=""margin-bottom: 0px;"">
             <span class=""text-muted small"">Days to get an Offer</span>
-            </p><h6>4 Days after Interview</h6>",,
+            </p><h6>4 Days after Interview</h6>",,,,
 hr_job_worker,1,Worker,10,13,12,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,0,"
+    </p>",,Jinasena_MasterData_Common.res_company_jinasena_agricultural_machinery_pvt_ltd,__export__.res_partner_87_894ae6ca,,0,__export__.res_users_164_79257039,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -3824,13 +3824,13 @@ hr_job_worker,1,Worker,10,13,12,1,0,"
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831114160_job_app_application_t,1,[TEST-1773831114160]-JOB-APP Application Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -4060,13 +4060,13 @@ hr_job_test_1773831114160_job_app_application_t,1,[TEST-1773831114160]-JOB-APP A
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831149162_job_app_application_t,1,[TEST-1773831149162]-JOB-APP Application Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -4296,13 +4296,13 @@ hr_job_test_1773831149162_job_app_application_t,1,[TEST-1773831149162]-JOB-APP A
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831185895_job_stage_stage_test_,1,[TEST-1773831185895]-JOB-STAGE Stage Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -4532,13 +4532,13 @@ hr_job_test_1773831185895_job_stage_stage_test_,1,[TEST-1773831185895]-JOB-STAGE
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831221227_job_stage_stage_test_,1,[TEST-1773831221227]-JOB-STAGE Stage Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -4768,13 +4768,13 @@ hr_job_test_1773831221227_job_stage_stage_test_,1,[TEST-1773831221227]-JOB-STAGE
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831257295_job_int_interview_tes,1,[TEST-1773831257295]-JOB-INT Interview Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -5004,13 +5004,13 @@ hr_job_test_1773831257295_job_int_interview_tes,1,[TEST-1773831257295]-JOB-INT I
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831292135_job_int_interview_tes,1,[TEST-1773831292135]-JOB-INT Interview Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -5240,13 +5240,13 @@ hr_job_test_1773831292135_job_int_interview_tes,1,[TEST-1773831292135]-JOB-INT I
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831328368_job_ref_refuse_test_j,1,[TEST-1773831328368]-JOB-REF Refuse Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -5476,13 +5476,13 @@ hr_job_test_1773831328368_job_ref_refuse_test_j,1,[TEST-1773831328368]-JOB-REF R
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831362792_job_ref_refuse_test_j,1,[TEST-1773831362792]-JOB-REF Refuse Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -5712,13 +5712,13 @@ hr_job_test_1773831362792_job_ref_refuse_test_j,1,[TEST-1773831362792]-JOB-REF R
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831398877_job_emp_employee_crea,1,[TEST-1773831398877]-JOB-EMP Employee Creation Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -5948,13 +5948,13 @@ hr_job_test_1773831398877_job_emp_employee_crea,1,[TEST-1773831398877]-JOB-EMP E
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831433913_job_emp_employee_crea,1,[TEST-1773831433913]-JOB-EMP Employee Creation Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -6184,13 +6184,13 @@ hr_job_test_1773831433913_job_emp_employee_crea,1,[TEST-1773831433913]-JOB-EMP E
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831470516_job_cv_cv_test_job,1,[TEST-1773831470516]-JOB-CV CV Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -6420,13 +6420,13 @@ hr_job_test_1773831470516_job_cv_cv_test_job,1,[TEST-1773831470516]-JOB-CV CV Te
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831505659_job_cv_cv_test_job,1,[TEST-1773831505659]-JOB-CV CV Test Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -6656,13 +6656,13 @@ hr_job_test_1773831505659_job_cv_cv_test_job,1,[TEST-1773831505659]-JOB-CV CV Te
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831541880_job_lock_lock_stage_j,1,[TEST-1773831541880]-JOB-LOCK Lock Stage Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -6892,13 +6892,13 @@ hr_job_test_1773831541880_job_lock_lock_stage_j,1,[TEST-1773831541880]-JOB-LOCK 
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831576763_job_lock_lock_stage_j,1,[TEST-1773831576763]-JOB-LOCK Lock Stage Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -7128,13 +7128,13 @@ hr_job_test_1773831576763_job_lock_lock_stage_j,1,[TEST-1773831576763]-JOB-LOCK 
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831613409_job_dup_duplicate_app,1,[TEST-1773831613409]-JOB-DUP Duplicate App Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -7364,13 +7364,13 @@ hr_job_test_1773831613409_job_dup_duplicate_app,1,[TEST-1773831613409]-JOB-DUP D
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831648758_job_dup_duplicate_app,1,[TEST-1773831648758]-JOB-DUP Duplicate App Job,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -7600,13 +7600,13 @@ hr_job_test_1773831648758_job_dup_duplicate_app,1,[TEST-1773831648758]-JOB-DUP D
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831685431_job_arch_archive_job_,1,[TEST-1773831685431]-JOB-ARCH Archive Job Test,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -7836,13 +7836,13 @@ hr_job_test_1773831685431_job_arch_archive_job_,1,[TEST-1773831685431]-JOB-ARCH 
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
+        ",,,,
 hr_job_test_1773831720660_job_arch_archive_job_,1,[TEST-1773831720660]-JOB-ARCH Archive Job Test,10,1,0,1,0,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,0,"
+    </p>",,base.main_company,base.main_partner,,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -8072,12 +8072,12 @@ hr_job_test_1773831720660_job_arch_archive_job_,1,[TEST-1773831720660]-JOB-ARCH 
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",,
-hr_job_test_position_9,1,test position,10,1,0,1,0,"<p data-last-history-steps=""1341580817228255""><br></p>",,,0,,"<span class=""text-muted small"">Time to Answer</span>
+        ",,,,
+hr_job_test_position_9,1,test position,10,1,0,1,0,"<p data-last-history-steps=""1341580817228255""><br></p>",,base.main_company,base.main_partner,__export__.res_users_164_79257039,0,__export__.res_users_164_79257039,,"<span class=""text-muted small"">Time to Answer</span>
             <h6>2 open days</h6>
             <span class=""text-muted small"">Process</span>
             <h6>1 Phone Call</h6>
             <h6>1 Onsite Interview</h6>
             <span class=""text-muted small"">Days to get an Offer</span>
             <h6>4 Days after Interview</h6>
-        ",Payslip - Jinasena Careers (1).pdf,<p><br></p>
+        ",__export__.res_users_164_79257039,__export__.res_users_164_79257039,Payslip - Jinasena Careers (1).pdf,<p><br></p>
