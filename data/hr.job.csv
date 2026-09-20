@@ -36,7 +36,7 @@ hr_job_engineering_assistant,1,Engineering Assistant,10,3,2,1,0,"
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,,0,,"
+    </p>",,,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,0,,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -280,7 +280,7 @@ hr_job_functional_consultant_10,1,Functional Consultant,10,3,2,1,0,"
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,,0,base.user_admin,"
+    </p>",,,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,0,base.user_admin,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -522,7 +522,7 @@ hr_job_prod_erp_supp_executive,1,Prod. ERP Supp. Executive,10,3,2,1,0,"
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,,0,,"
+    </p>",,,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,0,,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -766,7 +766,7 @@ hr_job_senior_engineer,1,Senior Engineer,10,2,1,1,0,"
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,,0,,"
+    </p>",,,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,0,,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -1000,7 +1000,7 @@ hr_job_senior_store_keeper,1,Senior Store Keeper,10,2,1,1,0,"
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,,0,,"
+    </p>",,,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,0,,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -1471,7 +1471,7 @@ hr_job_store_assistant,1,Store Assistant,10,2,1,1,0,"<p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,,0,,"<section class=""pt32"">
+    </p>",,,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,0,,"<section class=""pt32"">
         <div class=""container"">
             <div class=""row"">
                 <div class=""col-lg-8 pb32"" itemprop=""description"">
@@ -1711,7 +1711,7 @@ hr_job_tech_sales_officer,1,Tech. Sales Officer,10,2,1,1,0,"
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,,0,,"
+    </p>",,,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,0,,"
     
     <section class=""pt32"">
         <div class=""container"">
@@ -3362,7 +3362,7 @@ hr_job_test_position,1,Test Position,10,1,0,1,0,"<p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_jam_executive,,,0,,"<section class=""pt32"">
+    </p>",Jinasena_MasterData_HR.hr_department_jam_executive,,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,0,,"<section class=""pt32"">
         <div class=""container"">
             <div class=""row"">
                 <div class=""col-lg-8 pb32"" itemprop=""description"">
@@ -3594,7 +3594,7 @@ hr_job_worker,1,Worker,10,13,12,1,0,"
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,,,0,,"
+    </p>",,,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,0,,"
     
     <section class=""pt32"">
         <div class=""container"">
