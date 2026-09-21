@@ -1,212 +1,157 @@
-id,active,name,sequence,description,department_id/id,company_id/id,address_id/id,user_id/id,color,x_studio_line_manager_name/id,x_studio_leadership_name/id,x_studio_test_document_filename,x_studio_link
-hr_job_head_of_human_resourse,1,Head Of Human Resourse,1,"<p data-last-history-steps=""1270130943667562"">/</p>",,base.main_company,base.main_partner,,0,,,,
-hr_job_communication_executive,1,Communication Executive ,2,,,base.main_company,base.main_partner,,0,,,,
-hr_job_it_executive,1,IT Executive,3,,,base.main_company,base.main_partner,,0,,,,
-hr_job_erp_consultant,1,ERP Consultant,10,,,base.main_company,base.main_partner,,0,,,,
-hr_job_engineering_assistant,1,Engineering Assistant,10,"
-    <p>
-        Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
-        Strong communication, problem-solving, and work ethic required.
-        Adaptability, initiative, and willingness to learn are valued.
-    </p>",,seed_master_data_and_settings.company_jinasena_agricultural_machinery,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,,0,,,,
-hr_job_functional_consultant,1,Functional Consultant,10,,,base.main_company,base.main_partner,,0,,,,
-hr_job_functional_consultant_10,1,Functional Consultant,10,"
-    <p>
-        Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
-        Strong communication, problem-solving, and work ethic required.
-        Adaptability, initiative, and willingness to learn are valued.
-    </p>",,seed_master_data_and_settings.company_jinasena_agricultural_machinery,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,,0,,,,
-hr_job_functional_consultant_5,1,Functional Consultant,10,,,base.main_company,base.main_partner,,0,,,,
-hr_job_prod_erp_supp_executive,1,Prod. ERP Supp. Executive,10,"
-    <p>
-        Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
-        Strong communication, problem-solving, and work ethic required.
-        Adaptability, initiative, and willingness to learn are valued.
-    </p>",,seed_master_data_and_settings.company_jinasena_agricultural_machinery,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,,0,,,,
-hr_job_sales_manager,1,Sales Manager,10,,,base.main_company,base.main_partner,,0,,,,
-hr_job_senior_engineer,1,Senior Engineer,10,"
-    <p>
-        Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
-        Strong communication, problem-solving, and work ethic required.
-        Adaptability, initiative, and willingness to learn are valued.
-    </p>",,seed_master_data_and_settings.company_jinasena_agricultural_machinery,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,,0,,,,
-hr_job_senior_store_keeper,1,Senior Store Keeper,10,"
-    <p>
-        Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
-        Strong communication, problem-solving, and work ethic required.
-        Adaptability, initiative, and willingness to learn are valued.
-    </p>",,seed_master_data_and_settings.company_jinasena_agricultural_machinery,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,,0,,,,
+id,active,name,sequence,description,department_id/id,company_id/id,address_id/id,color
+hr_job_head_of_human_resourse,1,Head Of Human Resourse,1,"<p data-last-history-steps=""1270130943667562"">/</p>",,base.main_company,base.main_partner,0
+hr_job_communication_executive,1,Communication Executive ,2,,,base.main_company,base.main_partner,0
+hr_job_it_executive,1,IT Executive,3,,,base.main_company,base.main_partner,0
+hr_job_erp_consultant,1,ERP Consultant,10,,,base.main_company,base.main_partner,0
+hr_job_sales_manager,1,Sales Manager,10,,,base.main_company,base.main_partner,0
 hr_job_software_engineer,1,Software Engineer,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
-hr_job_store_assistant,1,Store Assistant,10,"<p>
-        Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
-        Strong communication, problem-solving, and work ethic required.
-        Adaptability, initiative, and willingness to learn are valued.
-    </p>",,seed_master_data_and_settings.company_jinasena_agricultural_machinery,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,,0,,,,
-hr_job_test_01,1,TEST-01,10,,,base.main_company,base.main_partner,,0,,,,
-hr_job_tech_sales_officer,1,Tech. Sales Officer,10,"
-    <p>
-        Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
-        Strong communication, problem-solving, and work ethic required.
-        Adaptability, initiative, and willingness to learn are valued.
-    </p>",,seed_master_data_and_settings.company_jinasena_agricultural_machinery,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
+hr_job_test_01,1,TEST-01,10,,,base.main_company,base.main_partner,0
 hr_job_test_finance_manager,1,Test - Finance Manager,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_finance_accounting,base.main_company,base.main_partner,,0,,,,
+    </p>",Jinasena_MasterData_HR.hr_department_test_finance_accounting,base.main_company,base.main_partner,0
 hr_job_test_hr_manager,1,Test - HR Manager,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_human_resources,base.main_company,base.main_partner,,0,,,,
+    </p>",Jinasena_MasterData_HR.hr_department_test_human_resources,base.main_company,base.main_partner,0
 hr_job_test_operations_manager,1,Test - Operations Manager,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_operations,base.main_company,base.main_partner,,0,,,,
+    </p>",Jinasena_MasterData_HR.hr_department_test_operations,base.main_company,base.main_partner,0
 hr_job_test_payroll_specialist,1,Test - Payroll Specialist,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_human_resources,base.main_company,base.main_partner,,0,,,,
+    </p>",Jinasena_MasterData_HR.hr_department_test_human_resources,base.main_company,base.main_partner,0
 hr_job_test_qa_engineer,1,Test - QA Engineer,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_engineering,base.main_company,base.main_partner,,0,,,,
+    </p>",Jinasena_MasterData_HR.hr_department_test_engineering,base.main_company,base.main_partner,0
 hr_job_test_software_engineer,1,Test - Software Engineer,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_test_engineering,base.main_company,base.main_partner,,0,,,,
-hr_job_test_position,1,Test Position,10,"<p>
-        Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
-        Strong communication, problem-solving, and work ethic required.
-        Adaptability, initiative, and willingness to learn are valued.
-    </p>",Jinasena_MasterData_HR.hr_department_jam_executive,seed_master_data_and_settings.company_jinasena_agricultural_machinery,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,,0,,,,
-hr_job_worker,1,Worker,10,"
-    <p>
-        Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
-        Strong communication, problem-solving, and work ethic required.
-        Adaptability, initiative, and willingness to learn are valued.
-    </p>",,seed_master_data_and_settings.company_jinasena_agricultural_machinery,Jinasena_MasterData_Common.res_partner_jinasena_agricultural_machinery_pvt_ltd,,0,,,,
+    </p>",Jinasena_MasterData_HR.hr_department_test_engineering,base.main_company,base.main_partner,0
 hr_job_test_1773831114160_job_app_application_t,1,[TEST-1773831114160]-JOB-APP Application Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831149162_job_app_application_t,1,[TEST-1773831149162]-JOB-APP Application Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831185895_job_stage_stage_test_,1,[TEST-1773831185895]-JOB-STAGE Stage Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831221227_job_stage_stage_test_,1,[TEST-1773831221227]-JOB-STAGE Stage Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831257295_job_int_interview_tes,1,[TEST-1773831257295]-JOB-INT Interview Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831292135_job_int_interview_tes,1,[TEST-1773831292135]-JOB-INT Interview Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831328368_job_ref_refuse_test_j,1,[TEST-1773831328368]-JOB-REF Refuse Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831362792_job_ref_refuse_test_j,1,[TEST-1773831362792]-JOB-REF Refuse Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831398877_job_emp_employee_crea,1,[TEST-1773831398877]-JOB-EMP Employee Creation Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831433913_job_emp_employee_crea,1,[TEST-1773831433913]-JOB-EMP Employee Creation Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831470516_job_cv_cv_test_job,1,[TEST-1773831470516]-JOB-CV CV Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831505659_job_cv_cv_test_job,1,[TEST-1773831505659]-JOB-CV CV Test Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831541880_job_lock_lock_stage_j,1,[TEST-1773831541880]-JOB-LOCK Lock Stage Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831576763_job_lock_lock_stage_j,1,[TEST-1773831576763]-JOB-LOCK Lock Stage Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831613409_job_dup_duplicate_app,1,[TEST-1773831613409]-JOB-DUP Duplicate App Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831648758_job_dup_duplicate_app,1,[TEST-1773831648758]-JOB-DUP Duplicate App Job,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831685431_job_arch_archive_job_,1,[TEST-1773831685431]-JOB-ARCH Archive Job Test,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
+    </p>",,base.main_company,base.main_partner,0
 hr_job_test_1773831720660_job_arch_archive_job_,1,[TEST-1773831720660]-JOB-ARCH Archive Job Test,10,"
     <p>
         Perform assigned responsibilities, collaborate with team members, and adhere to company policies.
         Strong communication, problem-solving, and work ethic required.
         Adaptability, initiative, and willingness to learn are valued.
-    </p>",,base.main_company,base.main_partner,,0,,,,
-hr_job_test_position_9,1,test position,10,"<p data-last-history-steps=""1341580817228255""><br></p>",,base.main_company,base.main_partner,seed_master_data_and_settings.user_164,0,seed_master_data_and_settings.user_164,seed_master_data_and_settings.user_164,Payslip - Jinasena Careers (1).pdf,<p><br></p>
+    </p>",,base.main_company,base.main_partner,0

@@ -1,19 +1,10 @@
-id,name,complete_name,active,company_id/id,manager_id/id,color,parent_path
-hr_department_administration,Administration,CEO Office / Administration,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,,10,16/17/
-hr_department_ceo_office,CEO Office,CEO Office,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,,10,16/
-hr_department_cnc_room_jem,CNC Room (JEM),CNC Room (JEM),1,base.main_company,,0,9/
-hr_department_finance,Finance,Finance,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,,0,11/
-hr_department_hr,HR,CEO Office / HR,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,,10,16/15/
-hr_department_human_resource,Human Resource,Human Resource,1,base.main_company,,0,7/
-hr_department_it,IT,IT,1,base.main_company,hr.employee_admin,0,3/
-hr_department_it_12,IT,IT,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,,0,12/
-hr_department_jam,JAM,JAM,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,,0,13/
-hr_department_jam_executive,JAM Executive,JAM Executive,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,,0,14/
-hr_department_jem,JEM,JEM,1,base.main_company,,0,10/
-hr_department_sales,Sales,CEO Office / Sales,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,,10,16/18/
-hr_department_stores,Stores,Stores,1,base.main_company,,0,6/
-hr_department_test_engineering,Test - Engineering,Test - Engineering,1,base.main_company,,0,63/
-hr_department_test_finance_accounting,Test - Finance & Accounting,Test - Finance & Accounting,1,base.main_company,,0,65/
-hr_department_test_human_resources,Test - Human Resources,Test - Human Resources,1,base.main_company,,0,64/
-hr_department_test_operations,Test - Operations,Test - Operations,1,base.main_company,,0,66/
-hr_department_maintenance,maintenance,maintenance,1,base.main_company,,0,8/
+id,name,complete_name,active,company_id/id,color,parent_path
+hr_department_cnc_room_jem,CNC Room (JEM),CNC Room (JEM),1,base.main_company,0,9/
+hr_department_human_resource,Human Resource,Human Resource,1,base.main_company,0,7/
+hr_department_jem,JEM,JEM,1,base.main_company,0,10/
+hr_department_stores,Stores,Stores,1,base.main_company,0,6/
+hr_department_test_engineering,Test - Engineering,Test - Engineering,1,base.main_company,0,63/
+hr_department_test_finance_accounting,Test - Finance & Accounting,Test - Finance & Accounting,1,base.main_company,0,65/
+hr_department_test_human_resources,Test - Human Resources,Test - Human Resources,1,base.main_company,0,64/
+hr_department_test_operations,Test - Operations,Test - Operations,1,base.main_company,0,66/
+hr_department_maintenance,maintenance,maintenance,1,base.main_company,0,8/

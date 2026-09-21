@@ -16,7 +16,6 @@
         'data/hr.job.csv',
         'data/hr.employee.csv',
         'data/hr.contract.csv',
-        'data/link/account.analytic.account.csv',
         'data/link/hr.department.csv',
         'data/link/hr.employee.csv',
     ],
