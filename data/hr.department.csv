@@ -8,3 +8,4 @@ hr_department_test_finance_accounting,Test - Finance & Accounting,Test - Finance
 hr_department_test_human_resources,Test - Human Resources,Test - Human Resources,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,64/
 hr_department_test_operations,Test - Operations,Test - Operations,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,66/
 hr_department_maintenance,maintenance,maintenance,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,8/
+hr_department_it_12,IT,IT,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,0,
