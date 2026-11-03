@@ -1,0 +1,2 @@
+id,name,sequence,active,company_id/id,color,requires_allocation,employee_requests,leave_validation_type,allocation_validation_type,request_unit,time_type,support_document,allows_negative,max_allowed_negative,create_calendar_meeting,responsible_ids/id
+hr_leave_type_annual_leave,Annual Leave,100,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,0,yes,no,hr,no,day,leave,,,0,1,

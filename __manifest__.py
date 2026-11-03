@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : MasterData : HR',
-    'version': '17.0.0.0.6',
+    'version': '17.0.0.0.7',
     'summary': 'Master-data extracted from CDB for HR domain.',
     'description': 'Extracted from Clear-DB. Test-env master data. Edit the CSVs in data/ to add/remove rows before install.',
     'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
@@ -10,6 +10,7 @@
     'depends': [
         'BugFix-HR',
         'Jinasena_MasterData_Common',
+        'hr_holidays',
     ],
     'data': [
         'data/hr.department.csv',
@@ -18,6 +19,19 @@
         'data/hr.contract.csv',
         'data/link/hr.department.csv',
         'data/link/hr.employee.csv',
+        'data/hr.salary.rule.category.csv',
+        'data/hr.payroll.structure.csv',
+        'data/01_bind_salary_rules.xml',
+        'data/hr.salary.rule.csv',
+        'data/hr.leave.type.csv',
+        'data/x_paye_tax-01.csv',
+        'data/x_paye_tax-02.csv',
+        'data/x_paye_tax-03.csv',
+        'data/x_paye_tax-04.csv',
+        'data/x_paye_tax-05.csv',
+        'data/x_paye_tax-06.csv',
+        'data/x_paye_tax-07.csv',
+        'data/x_paye_tax-08.csv',
     ],
     'installable': True,
     'auto_install': False,
