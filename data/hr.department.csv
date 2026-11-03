@@ -1,11 +1,1 @@
 id,name,complete_name,active,company_id/id,color,parent_path
-hr_department_cnc_room_jem,CNC Room (JEM),CNC Room (JEM),1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,9/
-hr_department_human_resource,Human Resource,Human Resource,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,7/
-hr_department_jem,JEM,JEM,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,10/
-hr_department_stores,Stores,Stores,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,6/
-hr_department_test_engineering,Test - Engineering,Test - Engineering,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,63/
-hr_department_test_finance_accounting,Test - Finance & Accounting,Test - Finance & Accounting,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,65/
-hr_department_test_human_resources,Test - Human Resources,Test - Human Resources,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,64/
-hr_department_test_operations,Test - Operations,Test - Operations,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,66/
-hr_department_maintenance,maintenance,maintenance,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,8/
-hr_department_it_12,IT,IT,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,0,
