@@ -13,3 +13,7 @@ hr_department_hr,HR,CEO Office / HR,1,seed_master_data_and_settings.company_jina
 hr_department_ceo_office,CEO Office,CEO Office,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,10,16/
 hr_department_administration,Administration,CEO Office / Administration,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,10,16/17/
 hr_department_sales,Sales,CEO Office / Sales,1,seed_master_data_and_settings.company_jinasena_agricultural_machinery,10,16/18/
+hr_department_test_engineering,Test - Engineering,Test - Engineering,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,63/
+hr_department_test_human_resources,Test - Human Resources,Test - Human Resources,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,64/
+hr_department_test_finance_accounting,Test - Finance & Accounting,Test - Finance & Accounting,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,65/
+hr_department_test_operations,Test - Operations,Test - Operations,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,66/

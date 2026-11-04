@@ -434,6 +434,7 @@ hr_salary_rule_epf_12_148,EPF 12%,EPF 12%,5,,hr_payroll.structure_worker_001,hr_
 # Note: returned value have to be set in the variable 'result'
 
 result = (contract.wage * 0.12)",contract.wage,0.0,0.0,code,0.0,12.0,contract.wage,result = -(contract.wage + contract.x_studio_gbud_a + contract.x_studio_gbud_l2) * 0.12,1.0,1,,,,,<p><br></p>
+hr_salary_rule_ex_gratia_154,Ex-gratia,EXG,5,1,Jinasena_MasterData_HR.hr_payroll_structure_workers,Jinasena_MasterData_HR.hr_salary_rule_category_sample_rule,python,result = contract.x_studio_ex_gratia > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_ex_gratia,1.0,1,,,,,
 hr_salary_rule_government_budget_a_156,Government Budget A,GBUD_A,5,1,Jinasena_MasterData_HR.hr_payroll_structure_workers,hr_payroll.ALW,python,result = contract.x_studio_gbud_a > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_gbud_a,1.0,1,,,,,
 hr_salary_rule_government_budget_l2_157,Government Budget L2,GBUD_L2,5,1,Jinasena_MasterData_HR.hr_payroll_structure_workers,hr_payroll.ALW,python,result = contract.x_studio_gbud_l2 > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_gbud_l2,1.0,1,,,,,
 hr_salary_rule_epf_8_158,EPF 8%,EPF 8%,5,1,Jinasena_MasterData_HR.hr_payroll_structure_workers,hr_payroll.DED,none,"
