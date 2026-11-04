@@ -1,2 +1,5 @@
 id,name,code,type_id/id,country_id/id,active,payslip_name,use_worked_day_lines,hide_basic_on_pdf,note
 hr_payroll_structure_executive,Executive,,hr_contract.structure_type_employee,,1,,1,,
+hr_payroll_structure_regular_pay,Regular Pay,,hr_contract.structure_type_employee,base.lk,,,1,,
+hr_payroll_structure_workers,Workers,,hr_contract.structure_type_worker,,1,,1,,
+hr_payroll_structure_executive_17,Executive,,hr_contract.structure_type_employee,,,,1,,
