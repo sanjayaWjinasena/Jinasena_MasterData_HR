@@ -1,148 +1,18 @@
 id,name,code,sequence,active,struct_id/id,category_id/id,condition_select,condition_python,condition_range,condition_range_min,condition_range_max,amount_select,amount_fix,amount_percentage,amount_percentage_base,amount_python_compute,quantity,appears_on_payslip,appears_on_payroll_report,appears_on_employee_cost_dashboard,not_computed_in_net,partner_id/id,note
-hr_salary_rule_basic_salary,Basic Salary,BASIC,1,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.BASIC,none,"
+hr_salary_rule_basic_salary,Basic Salary,BASIC,1,1,Jinasena_MasterData_HR.hr_payroll_structure_regular_pay,hr_payroll.BASIC,none,"
 # Available variables:
 #----------------------
-# payslip: hr.payslip object
+# payslip: object containing the payslips
 # employee: hr.employee object
 # contract: hr.contract object
-# rules: dict containing the rules code (previously computed)
-# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
-# worked_days: dict containing the computed worked days
-# inputs: dict containing the computed inputs.
+# rules: object containing the rules code (previously computed)
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs.
 
 # Note: returned value have to be set in the variable 'result'
 
-result = rules['NET']['total'] > categories['NET'] * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,result = payslip.paid_amount,1.0,1,,,,,
-hr_salary_rule_epf_8,EPF 8%,EPF 8%,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,none,"
-# Available variables:
-#----------------------
-# payslip: hr.payslip object
-# employee: hr.employee object
-# contract: hr.contract object
-# rules: dict containing the rules code (previously computed)
-# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
-# worked_days: dict containing the computed worked days
-# inputs: dict containing the computed inputs.
-
-# Note: returned value have to be set in the variable 'result'
-
-result = rules['NET']['total'] > categories['NET'] * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,result = -(contract.wage + contract.x_studio_gbud_a + contract.x_studio_gbud_l2) * 0.08,1.0,1,,,,,<p><br></p>
-hr_salary_rule_epf_12,EPF 12%,EPF 12%,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.COMP,none,"
-# Available variables:
-#----------------------
-# payslip: hr.payslip object
-# employee: hr.employee object
-# contract: hr.contract object
-# rules: dict containing the rules code (previously computed)
-# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
-# worked_days: dict containing the computed worked days
-# inputs: dict containing the computed inputs.
-
-# Note: returned value have to be set in the variable 'result'
-
-result = rules['NET']['total'] > categories['NET'] * 0.10",contract.wage,0.0,0.0,code,0.0,12.0,contract.wage,result = -(contract.wage + contract.x_studio_gbud_a + contract.x_studio_gbud_l2) * 0.12,1.0,1,,,,,<p><br></p>
-hr_salary_rule_payetax,PAYETAX,PAYEE,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = contract.x_studio_paye_tax_amount > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = - (contract.x_studio_paye_tax_amount),1.0,1,,,,,<p><br></p>
-hr_salary_rule_government_budget_a,Government Budget A,GBUD_A,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = contract.x_studio_gbud_a > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_gbud_a,1.0,1,,,,,
-hr_salary_rule_government_budget_l2,Government Budget L2,GBUD_L2,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = contract.x_studio_gbud_l2 > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_gbud_l2,1.0,1,,,,,
-hr_salary_rule_standing_order_1,Standing Order 1,STD_ORD1,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = contract.x_studio_standing_order_1 > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = -(contract.x_studio_standing_order_1),1.0,1,,,,,
-hr_salary_rule_standing_order_2,Standing Order 2,STD_ORD2,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = contract.x_studio_std_ord2 > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = -(contract.x_studio_std_ord2),1.0,1,,,,,
-hr_salary_rule_travelling_allowance,Travelling Allowance,TRAVEL,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = contract.x_studio_travelling_allowance > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_travelling_allowance,1.0,1,,,,,
-hr_salary_rule_ex_gratia,Ex-gratia,EXG,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,Jinasena_MasterData_HR.hr_salary_rule_category_attendance_incentive,python,result = contract.x_studio_ex_gratia > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_ex_gratia,1.0,1,,,,,
-hr_salary_rule_funeral,Funeral,FUNERAL,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,none,"
-# Available variables:
-#----------------------
-# payslip: hr.payslip object
-# employee: hr.employee object
-# contract: hr.contract object
-# rules: dict containing the rules code (previously computed)
-# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
-# worked_days: dict containing the computed worked days
-# inputs: dict containing the computed inputs.
-
-# Note: returned value have to be set in the variable 'result'
-
-result = rules['NET']['total'] > categories['NET'] * 0.10",contract.wage,0.0,0.0,fix,-300.0,0.0,,"
-# Available variables:
-#----------------------
-# payslip: hr.payslip object
-# employee: hr.employee object
-# contract: hr.contract object
-# rules: dict containing the rules code (previously computed)
-# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
-# worked_days: dict containing the computed worked days
-# inputs: dict containing the computed inputs.
-
-# Note: returned value have to be set in the variable 'result'
-
-result = contract.wage * 0.10",1.0,1,,,,,
-hr_salary_rule_etf_3,ETF 3%,ETF 3%,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.COMP,none,"
-# Available variables:
-#----------------------
-# payslip: hr.payslip object
-# employee: hr.employee object
-# contract: hr.contract object
-# rules: dict containing the rules code (previously computed)
-# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
-# worked_days: dict containing the computed worked days
-# inputs: dict containing the computed inputs.
-
-# Note: returned value have to be set in the variable 'result'
-
-result = rules['NET']['total'] > categories['NET'] * 0.10",contract.wage,0.0,0.0,code,0.0,12.0,contract.wage,result = -(contract.wage + contract.x_studio_gbud_a + contract.x_studio_gbud_l2) * 0.03,1.0,1,,,,,<p><br></p>
-hr_salary_rule_ot_normal,OT Normal,OT_NORMAL,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = inputs.get('OT_NORMAL') and inputs['OT_NORMAL'].amount or 0,contract.wage,0.0,0.0,code,0.0,0.0,,"ot_inp = inputs.get('OT_NORMAL')
-result = ot_inp.amount if ot_inp else 0",1.0,1,,,,,
-hr_salary_rule_ot_holiday,OT Holiday,OT_HOLIDAY,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = inputs.get('OT_HOLIDAY')   and inputs['OT_HOLIDAY'].amount   or 0,contract.wage,0.0,0.0,code,0.0,0.0,,"ot_inp = inputs.get('OT_HOLIDAY')
-result = ot_inp.amount if ot_inp else 0",1.0,1,,,,,
-hr_salary_rule_late_deduction,Late Deduction,LATE,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = inputs.get('LATE_DEDUCTION') and inputs['LATE_DEDUCTION'].amount or 0,contract.wage,0.0,0.0,code,0.0,0.0,,"ot_inp = inputs.get('LATE_DEDUCTION')
-result = ot_inp.amount if ot_inp else 0",1.0,1,,,,,
-hr_salary_rule_welfare_deduction,Welfare Deduction,WLF,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = inputs.get('WLF') and inputs['WLF'].amount or 0,contract.wage,0.0,0.0,code,0.0,0.0,,"ot_inp = inputs.get('WLF')
-result = ot_inp.amount if ot_inp else 0",1.0,1,,,,,
-hr_salary_rule_travel_deduction,Travel Deduction,TRVD,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = inputs.get('TRVD') and inputs['TRVD'].amount or 0,contract.wage,0.0,0.0,code,0.0,0.0,,"ot_inp = inputs.get('TRVD')
-result = ot_inp.amount if ot_inp else 0",1.0,1,,,,,
-hr_salary_rule_no_pay_staff,No Pay Staff,NPS,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = inputs.get('NPS') and inputs['NPS'].amount or 0,contract.wage,0.0,0.0,code,0.0,0.0,,"ot_inp = inputs.get('NPS')
-result = ot_inp.amount if ot_inp else 0",1.0,1,,,,,
-hr_salary_rule_over_time,Over Time,OT,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = employee.x_studio_ot_rate > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = (employee.x_studio_ot_rate * employee.x_studio_ot_hours),1.0,1,,,,,
-hr_salary_rule_gross_salary,Gross Salary,GROSS,100,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.GROSS,none,"
-# Available variables:
-#----------------------
-# payslip: hr.payslip object
-# employee: hr.employee object
-# contract: hr.contract object
-# rules: dict containing the rules code (previously computed)
-# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
-# worked_days: dict containing the computed worked days
-# inputs: dict containing the computed inputs.
-
-# Note: returned value have to be set in the variable 'result'
-
-result = rules['NET']['total'] > categories['NET'] * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (categories.get(""BASIC"") or 0) + (categories.get(""ALW"") or 0)",1.0,1,,,,,
-hr_salary_rule_installment_loan,Installment Loan,INSTALL,155,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,"result = employee.get_installment_loan(employee.id, payslip.date_from, payslip.date_to) > 0",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -employee.get_installment_loan(employee.id, payslip.date_from, payslip.date_to)",1.0,1,,,,,
-hr_salary_rule_attachment_of_salary,Attachment of Salary,ATTACH_SALARY,174,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,"result = (inputs.get(""ATTACH_SALARY"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""ATTACH_SALARY"") or 0).amount
-result_name = (inputs.get(""ATTACH_SALARY"") or 0).name",1.0,1,,,,,
-hr_salary_rule_assignment_of_salary,Assignment of Salary,ASSIG_SALARY,174,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,"result = (inputs.get(""ASSIG_SALARY"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""ASSIG_SALARY"") or 0).amount
-result_name = (inputs.get(""ASSIG_SALARY"") or 0).name",1.0,1,,,,,
-hr_salary_rule_child_support,Child Support,CHILD_SUPPORT,174,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,"result = (inputs.get(""CHILD_SUPPORT"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""CHILD_SUPPORT"") or 0).amount
-result_name = (inputs.get(""CHILD_SUPPORT"") or 0).name",1.0,1,,,,,
-hr_salary_rule_deduction,Deduction,DEDUCTION,198,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,"result = (inputs.get(""DEDUCTION"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""DEDUCTION"") or 0).amount
-result_name = (inputs.get(""DEDUCTION"") or 0).name",1.0,1,,,,,
-hr_salary_rule_addition,Addition,ADD,198,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,"result = (inputs.get(""ADD"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (inputs.get(""ADD"") or 0).amount
-result_name = (inputs.get(""ADD"") or 0).name",1.0,1,,,,,
-hr_salary_rule_reimbursement,Reimbursement,REIMBURSEMENT,199,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,"result = (inputs.get(""REIMBURSEMENT"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (inputs.get(""REIMBURSEMENT"") or 0).amount
-result_name = (inputs.get(""REIMBURSEMENT"") or 0).name",1.0,1,,,,,
-hr_salary_rule_net_salary,Net Salary,NET,200,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.NET,none,"
-# Available variables:
-#----------------------
-# payslip: hr.payslip object
-# employee: hr.employee object
-# contract: hr.contract object
-# rules: dict containing the rules code (previously computed)
-# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
-# worked_days: dict containing the computed worked days
-# inputs: dict containing the computed inputs.
-
-# Note: returned value have to be set in the variable 'result'
-
-result = rules['NET']['total'] > categories['NET'] * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (categories.get(""BASIC"") or 0) + (categories.get(""ALW"") or 0) + (categories.get(""DED"") or 0) + (categories.get(""SR"") or 0)",1.0,1,,,,,
+result = (rules.get(""NET"") or 0) > (categories.get(""NET"") or 0) * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,result = payslip.paid_amount,1.0,1,,,,,
 hr_salary_rule_gross,Gross,GROSS,100,1,Jinasena_MasterData_HR.hr_payroll_structure_regular_pay,hr_payroll.GROSS,none,"
 # Available variables:
 #----------------------
@@ -157,6 +27,30 @@ hr_salary_rule_gross,Gross,GROSS,100,1,Jinasena_MasterData_HR.hr_payroll_structu
 # Note: returned value have to be set in the variable 'result'
 
 result = (rules.get(""NET"") or 0) > (categories.get(""NET"") or 0) * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (categories.get(""BASIC"") or 0) + (categories.get(""ALW"") or 0)",1.0,1,,,,,
+hr_salary_rule_deduction,Deduction,DEDUCTION,198,1,Jinasena_MasterData_HR.hr_payroll_structure_regular_pay,hr_payroll.DED,python,"result = (inputs.get(""DEDUCTION"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""DEDUCTION"") or 0).amount
+result_name = (inputs.get(""DEDUCTION"") or 0).name",1.0,1,,,,,
+hr_salary_rule_attachment_of_salary,Attachment of Salary,ATTACH_SALARY,174,1,Jinasena_MasterData_HR.hr_payroll_structure_regular_pay,hr_payroll.DED,python,"result = (inputs.get(""ATTACH_SALARY"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""ATTACH_SALARY"") or 0).amount
+result_name = (inputs.get(""ATTACH_SALARY"") or 0).name",1.0,1,,,,,
+hr_salary_rule_assignment_of_salary,Assignment of Salary,ASSIG_SALARY,174,1,Jinasena_MasterData_HR.hr_payroll_structure_regular_pay,hr_payroll.DED,python,"result = (inputs.get(""ASSIG_SALARY"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""ASSIG_SALARY"") or 0).amount
+result_name = (inputs.get(""ASSIG_SALARY"") or 0).name",1.0,1,,,,,
+hr_salary_rule_child_support,Child Support,CHILD_SUPPORT,174,1,Jinasena_MasterData_HR.hr_payroll_structure_regular_pay,hr_payroll.DED,python,"result = (inputs.get(""CHILD_SUPPORT"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""CHILD_SUPPORT"") or 0).amount
+result_name = (inputs.get(""CHILD_SUPPORT"") or 0).name",1.0,1,,,,,
+hr_salary_rule_reimbursement,Reimbursement,REIMBURSEMENT,199,1,Jinasena_MasterData_HR.hr_payroll_structure_regular_pay,hr_payroll.ALW,python,"result = (inputs.get(""REIMBURSEMENT"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (inputs.get(""REIMBURSEMENT"") or 0).amount
+result_name = (inputs.get(""REIMBURSEMENT"") or 0).name",1.0,1,,,,,
+hr_salary_rule_net_salary,Net Salary,NET,200,1,Jinasena_MasterData_HR.hr_payroll_structure_regular_pay,hr_payroll.NET,none,"
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+
+result = (rules.get(""NET"") or 0) > (categories.get(""NET"") or 0) * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (categories.get(""BASIC"") or 0) + (categories.get(""ALW"") or 0) + (categories.get(""DED"") or 0)",1.0,1,,,,,
 hr_salary_rule_basic_salary_26,Basic Salary,BASIC,1,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.BASIC,none,"
 # Available variables:
 #----------------------
@@ -171,6 +65,20 @@ hr_salary_rule_basic_salary_26,Basic Salary,BASIC,1,1,Jinasena_MasterData_HR.hr_
 # Note: returned value have to be set in the variable 'result'
 
 result = (rules.get(""NET"") or 0) > (categories.get(""NET"") or 0) * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,result = payslip.paid_amount,1.0,1,,,,,
+hr_salary_rule_gross_salary,Gross Salary,GROSS,100,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.GROSS,none,"
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+
+result = (rules.get(""NET"") or 0) > (categories.get(""NET"") or 0) * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (categories.get(""BASIC"") or 0) + (categories.get(""ALW"") or 0)",1.0,1,,,,,
 hr_salary_rule_deduction_28,Deduction,DEDUCTION,198,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,"result = (inputs.get(""DEDUCTION"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""DEDUCTION"") or 0).amount
 result_name = (inputs.get(""DEDUCTION"") or 0).name",1.0,1,,,,,
 hr_salary_rule_attachment_of_salary_29,Attachment of Salary,ATTACH_SALARY,174,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,"result = (inputs.get(""ATTACH_SALARY"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -(inputs.get(""ATTACH_SALARY"") or 0).amount
@@ -222,6 +130,33 @@ result = (rules.get(""NET"") or 0) > (categories.get(""NET"") or 0) * 0.10",cont
                     # Note: returned value have to be set in the variable 'result'
 
 result = -employee.get_installment_loan(employee.id,payslip.date_from,payslip.date_to) ",1.0,1,,,,,<p><br></p>
+hr_salary_rule_over_time,Over Time,OT,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,"
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+
+result = employee.x_studio_ot_rate > 0",contract.wage,0.0,0.0,code,0.0,0.0,,"
+                    # Available variables:
+                    #----------------------
+                    # payslip: object containing the payslips
+                    # employee: hr.employee object
+                    # contract: hr.contract object
+                    # rules: object containing the rules code (previously computed)
+                    # categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+                    # worked_days: object containing the computed worked days.
+                    # inputs: object containing the computed inputs.
+
+                    # Note: returned value have to be set in the variable 'result'
+
+result = (employee.x_studio_ot_rate * employee.x_studio_ot_hours)",1.0,1,,,,,<p><br></p>
 hr_salary_rule_basic_salary_92,Basic Salary,BASIC,1,1,Jinasena_MasterData_HR.hr_payroll_structure_workers,hr_payroll.BASIC,none,"
 # Available variables:
 #----------------------
@@ -353,6 +288,62 @@ hr_salary_rule_net_salary_108,Net Salary,NET,200,1,Jinasena_MasterData_HR.hr_pay
 # Note: returned value have to be set in the variable 'result'
 
 result = (rules.get(""NET"") or 0) > (categories.get(""NET"") or 0) * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (categories.get(""BASIC"") or 0) + (categories.get(""ALW"") or 0) + (categories.get(""DED"") or 0)",1.0,1,,,,,
+hr_salary_rule_epf_8,EPF 8%,EPF 8%,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,none,"
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+
+result = (rules.get(""NET"") or 0) > (categories.get(""NET"") or 0) * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,"ot_line = inputs.get('OT_HOLIDAY')
+ot_amount = ot_line.amount if ot_line else 0
+
+epf_base = ( contract.wage
+           + contract.x_studio_gbud_a
+           + contract.x_studio_gbud_l2
+           + ot_amount )
+result = -epf_base * 0.08",1.0,1,,,,,<p><br></p>
+hr_salary_rule_epf_12,EPF 12%,EPF 12%,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.COMP,none,"
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+
+result = (contract.wage * 0.12)",contract.wage,0.0,0.0,code,0.0,12.0,contract.wage,"ot_line = inputs.get('OT_HOLIDAY')
+ot_amount = ot_line.amount if ot_line else 0
+
+epf_base = ( contract.wage
+           + contract.x_studio_gbud_a
+           + contract.x_studio_gbud_l2
+           + ot_amount )
+result = -epf_base * 0.12",1.0,1,,,,,<p><br></p>
+hr_salary_rule_payetax,PAYETAX,PAYEE,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,"
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.x_studio_paye_tax_amount > 0",contract.wage,0.0,0.0,code,0.0,0.0,,result = - (contract.x_studio_paye_tax_amount),1.0,1,,,,,<p><br></p>
 hr_salary_rule_basic_salary_120,Basic Salary,BASIC,1,1,hr_payroll.structure_worker_001,hr_payroll.BASIC,none,"
 # Available variables:
 #----------------------
@@ -405,6 +396,63 @@ hr_salary_rule_net_salary_127,Net Salary,NET,200,1,hr_payroll.structure_worker_0
 # Note: returned value have to be set in the variable 'result'
 
 result = (rules.get(""NET"") or 0) > (categories.get(""NET"") or 0) * 0.10",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (categories.get(""BASIC"") or 0) + (categories.get(""ALW"") or 0) + (categories.get(""DED"") or 0)",1.0,1,,1,,,
+hr_salary_rule_government_budget_a,Government Budget A,GBUD_A,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = contract.x_studio_gbud_a > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_gbud_a,1.0,1,,,,,
+hr_salary_rule_government_budget_l2,Government Budget L2,GBUD_L2,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = contract.x_studio_gbud_l2 > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_gbud_l2,1.0,1,,,,,
+hr_salary_rule_standing_order_1,Standing Order 1,STD_ORD1,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = contract.x_studio_standing_order_1 > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = -(contract.x_studio_standing_order_1),1.0,1,,,,,
+hr_salary_rule_standing_order_2,Standing Order 2,STD_ORD2,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = contract.x_studio_std_ord2 > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = -(contract.x_studio_std_ord2),1.0,1,,,,,
+hr_salary_rule_travelling_allowance,Travelling Allowance,TRAVEL,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = contract.x_studio_travelling_allowance > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_travelling_allowance,1.0,1,,,,,
+hr_salary_rule_ex_gratia,Ex-gratia,EXG,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,Jinasena_MasterData_HR.hr_salary_rule_category_sample_rule,python,result = contract.x_studio_ex_gratia > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_ex_gratia,1.0,1,,,,,
+hr_salary_rule_funeral,Funeral,FUNERAL,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,none,"
+# Available variables:
+#----------------------
+# payslip: hr.payslip object
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: dict containing the rules code (previously computed)
+# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: dict containing the computed worked days
+# inputs: dict containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+
+result = rules['NET'] > categories['NET'] * 0.10",contract.wage,0.0,0.0,fix,-300.0,0.0,,"
+# Available variables:
+#----------------------
+# payslip: hr.payslip object
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: dict containing the rules code (previously computed)
+# categories: dict containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: dict containing the computed worked days
+# inputs: dict containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+
+result = contract.wage * 0.10",1.0,1,,,,,
+hr_salary_rule_etf_3,ETF 3%,ETF 3%,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.COMP,none,"
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.contract object
+# rules: object containing the rules code (previously computed)
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days
+# inputs: object containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+
+result = (contract.wage * 0.12)",contract.wage,0.0,0.0,code,0.0,12.0,contract.wage,"ot_line = inputs.get('OT_HOLIDAY')
+ot_amount = ot_line.amount if ot_line else 0
+
+etf_base = ( contract.wage
+           + contract.x_studio_gbud_a
+           + contract.x_studio_gbud_l2
+           + ot_amount )
+result = -etf_base * 0.03",1.0,1,,,,,<p><br></p>
+hr_salary_rule_installment_loan,Installment Loan,INSTALL,155,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,"result = employee.get_installment_loan(employee.id, payslip.date_from, payslip.date_to) > 0",contract.wage,0.0,0.0,code,0.0,0.0,,"result = -employee.get_installment_loan(employee.id, payslip.date_from, payslip.date_to)",1.0,1,,,,,
+hr_salary_rule_addition,Addition,ADD,198,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,"result = (inputs.get(""ADD"") or 0)",contract.wage,0.0,0.0,code,0.0,0.0,,"result = (inputs.get(""ADD"") or 0).amount
+result_name = (inputs.get(""ADD"") or 0).name",1.0,1,,,,,
 hr_salary_rule_epf_8_147,EPF 8%,EPF8%,5,,hr_payroll.structure_worker_001,hr_payroll.DED,none,"
 # Available variables:
 #----------------------
@@ -434,6 +482,13 @@ hr_salary_rule_epf_12_148,EPF 12%,EPF 12%,5,,hr_payroll.structure_worker_001,hr_
 # Note: returned value have to be set in the variable 'result'
 
 result = (contract.wage * 0.12)",contract.wage,0.0,0.0,code,0.0,12.0,contract.wage,result = -(contract.wage + contract.x_studio_gbud_a + contract.x_studio_gbud_l2) * 0.12,1.0,1,,,,,<p><br></p>
+hr_salary_rule_ot_normal,OT Normal,OT_NORMAL,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,result = inputs.get('OT_NORMAL') and inputs['OT_NORMAL'].amount or 0,contract.wage,0.0,0.0,code,0.0,0.0,,"ot_inp = inputs.get('OT_NORMAL')
+result = ot_inp.amount if ot_inp else 0",1.0,1,,,,,
+hr_salary_rule_ot_holiday,OT Holiday,OT_HOLIDAY,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.ALW,python,"
+result = inputs.get('OT_HOLIDAY')   and inputs['OT_HOLIDAY'].amount   or 0",contract.wage,0.0,0.0,code,0.0,0.0,,"ot_inp = inputs.get('OT_HOLIDAY')
+result = ot_inp.amount if ot_inp else 0",1.0,1,,,,,
+hr_salary_rule_late_deduction,Late Deduction,LATE,5,1,Jinasena_MasterData_HR.hr_payroll_structure_executive,hr_payroll.DED,python,result = inputs.get('LATE_DEDUCTION') and inputs['LATE_DEDUCTION'].amount or 0,contract.wage,0.0,0.0,code,0.0,0.0,,"ot_inp = inputs.get('LATE_DEDUCTION')
+result = ot_inp.amount if ot_inp else 0",1.0,1,,,,,
 hr_salary_rule_ex_gratia_154,Ex-gratia,EXG,5,1,Jinasena_MasterData_HR.hr_payroll_structure_workers,Jinasena_MasterData_HR.hr_salary_rule_category_sample_rule,python,result = contract.x_studio_ex_gratia > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_ex_gratia,1.0,1,,,,,
 hr_salary_rule_government_budget_a_156,Government Budget A,GBUD_A,5,1,Jinasena_MasterData_HR.hr_payroll_structure_workers,hr_payroll.ALW,python,result = contract.x_studio_gbud_a > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_gbud_a,1.0,1,,,,,
 hr_salary_rule_government_budget_l2_157,Government Budget L2,GBUD_L2,5,1,Jinasena_MasterData_HR.hr_payroll_structure_workers,hr_payroll.ALW,python,result = contract.x_studio_gbud_l2 > 0,contract.wage,0.0,0.0,code,0.0,0.0,,result = contract.x_studio_gbud_l2,1.0,1,,,,,
