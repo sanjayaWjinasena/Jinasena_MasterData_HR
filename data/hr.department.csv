@@ -1,4 +1,6 @@
 id,name,complete_name,active,company_id/id,color,parent_path
+hr_department_administration_1,Administration,Administration,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,1/
+hr_department_sales_2,Sales,Sales,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,2/
 hr_department_it,IT,IT,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,3/
 hr_department_stores,Stores,Stores,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,6/
 hr_department_human_resource,Human Resource,Human Resource,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,7/

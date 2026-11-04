@@ -1,4 +1,8 @@
 id,name,sequence,active,company_id/id,color,requires_allocation,employee_requests,leave_validation_type,allocation_validation_type,request_unit,time_type,support_document,allows_negative,max_allowed_negative,create_calendar_meeting,responsible_ids/id
+hr_leave_type_paid_time_off,Paid Time Off,100,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,yes,no,both,officer,day,leave,,,0,1,seed_master_data_and_settings.user_2
+hr_leave_type_sick_time_off,Sick Time Off,100,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,no,yes,hr,officer,day,leave,,,0,1,seed_master_data_and_settings.user_2
+hr_leave_type_compensatory_days,Compensatory Days,100,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,yes,yes,manager,officer,hour,leave,,,0,1,seed_master_data_and_settings.user_2
+hr_leave_type_unpaid,Unpaid,100,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,no,yes,both,officer,hour,leave,,,0,1,seed_master_data_and_settings.user_2
 hr_leave_type_annual_leave_5,Annual Leave,100,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,yes,no,hr,officer,day,leave,,,0,1,
 hr_leave_type_casual_leave,Casual Leave,100,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,yes,no,hr,officer,half_day,leave,,,0,1,
 hr_leave_type_sick_leave,Sick Leave,100,1,seed_master_data_and_settings.company_jinasena_pvt_ltd,0,yes,no,hr,officer,day,leave,,,0,1,
