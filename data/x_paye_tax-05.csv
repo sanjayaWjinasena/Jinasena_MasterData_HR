@@ -1,4 +1,4 @@
-id,x_name,x_active,x_studio_sequence,x_studio_start_date,x_studio_end_date,x_studio_from_value,x_studio_to_value,x_studio_tax_amount
+id,name,active,sequence,x_studio_start_date,x_studio_end_date,x_studio_from_value,x_studio_to_value,x_studio_tax_amount
 paye_tax_tax20001,TAX20001,1,0,2025-01-01,2025-12-31,306484.0,306488.0,20057.0
 paye_tax_tax20002,TAX20002,1,0,2025-01-01,2025-12-31,306489.0,306492.0,20058.0
 paye_tax_tax20003,TAX20003,1,0,2025-01-01,2025-12-31,306493.0,306496.0,20059.0
